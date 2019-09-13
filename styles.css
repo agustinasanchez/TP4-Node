@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body .section {
+  width: 100%;
+  height: 100%;
+}
+body .section .container {
+  width: 90%;
+  height: 100%;
+  margin: 20px auto;
+}
+body .section .container .banner {
+  width: 100%;
+  height: 60px;
+  background-color: #435d7d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .section .container .banner .title {
+  color: #FFFFFF;
+}
+body .section .container .info div {
+  width: 100%;
+  height: 50px;
+}
+body .section .container .info div .filter {
+  float: right;
+  border: 1px solid #000;
+}
+body .section .container .info .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
