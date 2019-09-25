@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="" ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="index.js"></script>
     <title>Manage Employees</title>
 </head>
 
-<body>
+<body onload="initialize()">
     <section class="section">
         <div class="container">
             <div class="banner">
@@ -19,27 +22,37 @@
                     Manage Employees
                 </div>
                 <button class="add-employee"><i class="material-icons"> add_circle </i>
-                      Add new employee
+                    Add new employee
                 </button>
             </div>
             <div class="info">
                 <div>
                     <input class="filter" type="text" placeholder="Filter...">
                 </div>
-                <ul class="list">
-                    <li>
-                        <input type="checkbox">
-                    </li>
-                    <li>Name</li>
-                    <li>Email</li>
-                    <li>Adress</li>
-                    <li>Phone</li>
-                    <li>Actions</li>
-                </ul>
+                <div class="row">
+                    <div class="col-2">
+                        Name
+                    </div>
+                    <div class="col-3">
+                        Email
+                    </div>
+                    <div class="col-3">
+                        Address
+                    </div>
+                    <div class="col-2">
+                        Phone
+                    </div>
+                    <div class="col-2">
+                        Actions
+                    </div>
+                </div>
+                
+                <div id="EmployeesRows">
 
+                    </div>
             </div>
-        </div>
     </section>
-    
+
 </body>
+
 </html>
