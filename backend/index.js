@@ -15,6 +15,7 @@ app.get ("/", (req, res, next) => {
 app.post ("/", (req, res, next) => {
     let employee = req.body 
     employee.id = employees.length +1
+    console.log(employee)
     employees.push(employee)
     res.json(employee);
  });
