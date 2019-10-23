@@ -32,8 +32,11 @@ app.put ("/:id", (req, res, next) => {
     res.json (employee) 
 })
 
-
-
+app.delete ("/:id", (req, res, next) => {
+  employees = employees.filter (e => {
+    return e.id != req.params.id})
+  res.json ({"status":"deleted"})
+})
 
 
 // if (res.json (employee)data.hasOwnProperty("name") && data.hasOwnProperty("email")) {
