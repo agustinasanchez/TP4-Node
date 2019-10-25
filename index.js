@@ -26,6 +26,17 @@ const createEmployeeRow = employee => {
     let phoneCol = createElem('div', "col-2")
     phoneCol.innerText = employee.phone
     row.appendChild(phoneCol)
+    let actions = createElem('div', "col-2")
+    let deleteButton = createElem("i", "material-icons")
+    deleteButton.innerText = "delete"
+    deleteButton.setAttribute("data-toggle","modal") 
+    deleteButton.setAttribute("data-target","#deleteModal")
+    deleteButton.onclick = function(){
+        let modal = document.getElementById("deleteModal")
+        modal.setAttribute("data-id", employee.id)
+    }
+    actions.appendChild(deleteButton)
+    row.appendChild(actions)
 
     return row
 }
@@ -57,4 +68,18 @@ const AddEmployee = () => {
         location.reload()
     })
     
+}
+
+const deleteEmployee = () => {
+    let modal = document.getElementById("deleteModal")
+    let id = modal.getAttribute("data-id")
+    fetch (`http://localhost:3000/${id}`, {
+        method:"DELETE", 
+        headers:{
+            'Content-Type': 'application/json'
+          }
+    }).then(()=> {
+        location.reload()
+    })
+
 }

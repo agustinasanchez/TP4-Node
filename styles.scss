@@ -5,6 +5,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    background-color: #d9dada;
 }
 
 body { 
@@ -35,12 +36,16 @@ body {
                     color: #FFFFFF;
                     margin: auto;
                     border-radius: 8px;
+                    .add-button{
+                        background-color: #28B463;
+                    }
                 }
                 .title{
                     color: #FFFFFF;
                     margin: auto;
                     display: flex;
                     flex-direction: column;
+                    background-color: #435d7d;
                 }
         }
         .info{
@@ -53,11 +58,14 @@ body {
                     border: 1px solid #B2BABB;
                     margin: 16px;
                     padding: 12px;
+                    background-color: #FFFFFF;
                 }
             }
             .row{
                 margin: auto; 
                 padding: 12px;
+                color: #435d7d;
+                font-weight: 900;
             }
             .EmployeesRows{
                 border-bottom: 1px solid #B2BABB;

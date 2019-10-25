@@ -5,6 +5,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  background-color: #d9dada;
 }
 
 body .section {
@@ -38,11 +39,15 @@ body .section .container .banner .add-employee {
   margin: auto;
   border-radius: 8px;
 }
+body .section .container .banner .add-employee .add-button {
+  background-color: #28B463;
+}
 body .section .container .banner .title {
   color: #FFFFFF;
   margin: auto;
   display: flex;
   flex-direction: column;
+  background-color: #435d7d;
 }
 body .section .container .info div {
   width: 100%;
@@ -54,10 +59,13 @@ body .section .container .info div .filter {
   border: 1px solid #B2BABB;
   margin: 16px;
   padding: 12px;
+  background-color: #FFFFFF;
 }
 body .section .container .info .row {
   margin: auto;
   padding: 12px;
+  color: #435d7d;
+  font-weight: 900;
 }
 body .section .container .info .EmployeesRows {
   border-bottom: 1px solid #B2BABB;
